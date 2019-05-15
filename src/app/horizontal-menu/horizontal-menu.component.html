@@ -1,3 +1,14 @@
-<p>
-  horizontal-menu works!
-</p>
+<mat-toolbar color="warn">
+  <img width="60" alt="Multicloud Logo" src="assets/images/multicloud_tekst.png">
+  <button mat-button style="font-size: medium" *ngFor="let menuItem of menuItems">{{menuItem.name}}</button>
+
+  
+  <button mat-button style="font-size: larger" [matMenuTriggerFor]="appMenu"> Menu </button>
+  <mat-menu #appMenu="matMenu">
+    <button mat-menu-item> Michał </button>
+    <button mat-menu-item> Michał 2</button>
+  </mat-menu>
+
+</mat-toolbar>
+
+
