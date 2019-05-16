@@ -8,16 +8,7 @@ import appRoutes from '../routerConfig';
   styleUrls: ['./horizontal-menu.component.scss']
 })
 export class HorizontalMenuComponent implements OnInit {
-  menuItems = [
-    {name: 'addRegion',
-      path: 'addRegion'},
-    {name: 'modifyRegion',
-      path: 'modifyRegion'},
-    {name: 'addTenant',
-      path: 'addTenant'},
-    {name: 'Home',
-      path: ''}
-  ];
+  menuItems = appRoutes;
   constructor() { }
   ngOnInit() {
   }

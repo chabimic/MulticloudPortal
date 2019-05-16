@@ -3,18 +3,22 @@ import {HomeComponent} from './home/home.component';
 import {AddRegionComponent} from './add-region/add-region.component';
 
 const appRoutes = [
-  { path: 'home',
-    component: HomeComponent
-  },
-  { path: '',
+  { name: '',
+    path: '',
     redirectTo: '/home',
     pathMatch: 'full'
   },
-  { path: 'addTenant',
+  { name: 'addRegion',
+    path: 'addRegion',
+    component: AddRegionComponent
+  },
+  { name: 'addTenant',
+    path: 'addTenant',
     component: AddTenantComponent
   },
-  { path: 'addRegion',
-    component: AddRegionComponent
+  { name: 'Home',
+    path: 'home',
+    component: HomeComponent
   }
   ];
 
