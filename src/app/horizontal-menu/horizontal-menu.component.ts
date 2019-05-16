@@ -8,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HorizontalMenuComponent implements OnInit {
   menuItems = [
-    {name: 'addRegion'},
-    {name: 'modifyRegion'},
-    {name: 'addTenant'}
+    {name: 'addRegion',
+      path: 'addRegion'},
+    {name: 'modifyRegion',
+      path: 'modifyRegion'},
+    {name: 'addTenant',
+      path: 'addTenant'},
+    {name: 'Home',
+      path: ''}
   ];
   constructor() { }
   ngOnInit() {

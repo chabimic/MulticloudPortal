@@ -1,9 +1,14 @@
 <mat-toolbar class=toolbar color="warn" style="text-decoration: none">
   <div>
-    <img width="80" alt="Multicloud Logo" src="assets/images/multicloud.png">
+    <button mat-button routerLink="/" routerLinkActive="active">
+      <img width="80" alt="Multicloud Logo" src="assets/images/multicloud.png">
+    </button>
   </div>
   <div>
-    <button mat-button style="font-size: medium" *ngFor="let menuItem of menuItems">{{menuItem.name}}</button>
+    Multicloud Portal
+  </div>
+  <div>
+    <button mat-button routerLink="{{menuItem.path}}" routerLinkActive="active" style="font-size: medium" *ngFor="let menuItem of menuItems">{{menuItem.name}}</button>
   </div>
 </mat-toolbar>
 
