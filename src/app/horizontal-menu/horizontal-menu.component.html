@@ -1,14 +1,28 @@
-<mat-toolbar color="warn">
-  <img width="60" alt="Multicloud Logo" src="assets/images/multicloud.png">
-  <button mat-button style="font-size: medium" *ngFor="let menuItem of menuItems">{{menuItem.name}}</button>
+<mat-toolbar class=toolbar color="warn" style="text-decoration: none">
+  <div>
+    <img width="80" alt="Multicloud Logo" src="assets/images/multicloud.png">
+  </div>
+  <div>
+    <button mat-button style="font-size: medium" *ngFor="let menuItem of menuItems">{{menuItem.name}}</button>
+  </div>
+</mat-toolbar>
+
+<!--
+<mat-tab-group color="warn">
+<mat-tab style="font-size: medium" *ngFor="let menuItem of menuItems" label="{{menuItem.name}}"></mat-tab>
+</mat-tab-group>
+-->
+
+<!--  <mat-tab-group style="color: white">
+    <mat-tab style="font-size: medium; color: white" *ngFor="let menuItem of menuItems" label="{{menuItem.name}}"></mat-tab>
+  </mat-tab-group>-->
 
 
-  <button mat-button style="font-size: larger" [matMenuTriggerFor]="appMenu"> Menu </button>
+<!--  <button mat-button style="font-size: larger" [matMenuTriggerFor]="appMenu"> Menu </button>
   <mat-menu #appMenu="matMenu">
     <button mat-menu-item> Michał </button>
     <button mat-menu-item> Michał 2</button>
-  </mat-menu>
+  </mat-menu>-->
 
-</mat-toolbar>
-
+<!-- STEPPER do robienia kroków -->
 

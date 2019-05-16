@@ -1,0 +1,66 @@
+<mat-horizontal-stepper>
+  <mat-step label="Add Tenant to AAI">
+    <div>
+      <mat-form-field floatLabel="always">
+        <mat-label>Cloud owner</mat-label>
+        <input matInput required>
+      </mat-form-field>
+      <br>
+      <mat-form-field floatLabel="always">
+        <mat-label>Cloud region Id</mat-label>
+        <input matInput required>
+      </mat-form-field>
+      <br>
+      <mat-form-field floatLabel="always">
+        <mat-label>Tenant Id</mat-label>
+        <input matInput required>
+      </mat-form-field>
+      <br>
+      <mat-form-field floatLabel="always">
+        <mat-label>Tenant name</mat-label>
+        <input matInput required>
+      </mat-form-field>
+    </div>
+    <div style="text-align:center;">
+      <button style="background-color: #f44336; width: 400px" mat-button matStepperNext>Next</button>
+    </div>
+  </mat-step>
+
+  <mat-step label="next Step" >
+    <div>
+      <mat-form-field floatLabel="always">
+        <mat-label>Something</mat-label>
+        <input matInput required>
+      </mat-form-field>
+      <br>
+      <mat-form-field floatLabel="always">
+        <mat-label>Something more</mat-label>
+        <input matInput required>
+      </mat-form-field>
+    </div>
+    <div >
+      <button style="background-color: #f44336; width: 400px; float: left" mat-button matStepperPrevious>Back</button>
+      <button style="background-color: #f44336; width: 400px; float: right" mat-button matStepperNext>Next</button>
+    </div>
+  </mat-step>
+
+  <mat-step label="Assosiate services with tenant">
+    <div>
+      <mat-form-field floatLabel="always">
+        <mat-label>Something</mat-label>
+        <input matInput required>
+      </mat-form-field>
+      <br>
+      <mat-form-field floatLabel="always">
+        <mat-label>Something more</mat-label>
+        <input matInput required>
+      </mat-form-field>
+    </div>
+    <div style="text-align:center;">
+      <button style="background-color: #f44336; width: 400px; float: left" mat-button matStepperPrevious>Back</button>
+      <button style="background-color: chartreuse; width: 400px; float:right;" mat-button>Save Tenant</button>
+    </div>
+  </mat-step>
+
+
+</mat-horizontal-stepper>
