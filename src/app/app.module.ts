@@ -20,6 +20,7 @@ import { HorizontalMenuComponent } from './horizontal-menu/horizontal-menu.compo
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AddTenantComponent } from './add-tenant/add-tenant.component';
 import { HomeComponent } from './home/home.component';
+import { AddRegionComponent } from './add-region/add-region.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { HomeComponent } from './home/home.component';
     HorizontalMenuComponent,
     AddTenantComponent,
     HomeComponent,
+    AddRegionComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import RouterConfig from '../routerConfig';
+import appRoutes from '../routerConfig';
 
 @Component({
   selector: 'app-horizontal-menu',
