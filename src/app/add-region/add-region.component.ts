@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import cloudTypes from '../config';
 
 @Component({
   selector: 'app-add-region',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddRegionComponent implements OnInit {
 
+  cloudTypes = cloudTypes;
   constructor() { }
 
   ngOnInit() {
