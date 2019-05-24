@@ -10,4 +10,10 @@ const cloudTypes = [
   }
 ];
 
+export const services = [
+  {name: 'vFW'},
+  {name: 'vFWDT'},
+  {name: 'vFWCL'},
+  {name: 'inny'}
+]
 export default cloudTypes;

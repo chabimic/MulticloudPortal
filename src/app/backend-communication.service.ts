@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import {services} from './config';
 
 @Injectable({
   providedIn: 'root'
@@ -6,7 +7,8 @@ import { Injectable } from '@angular/core';
 export class BackendCommunicationService {
 
   constructor() { }
-  getAllRegions() {
-    return 'regions';
+  getServices() {
+    return services;
   }
 }
+

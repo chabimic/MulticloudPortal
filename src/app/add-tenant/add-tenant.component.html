@@ -50,13 +50,10 @@
       <mat-form-field floatLabel="always">
         <mat-label>Services</mat-label>
         <mat-select required multiple>
-          <mat-option value="pierwszy">vFW</mat-option>
-          <mat-option value="drugi">vFWDT</mat-option>
-          <mat-option value="itd.">vFWCL</mat-option>
+          <mat-option value={{service.name}} *ngFor="let service of services ">{{service.name}}</mat-option>
         </mat-select>
       </mat-form-field>
     </div>
-    Print service result: <br>{{zmienna}}
     <div style="text-align:center;">
       <button style="background-color: #f44336; width: 400px; float: left" mat-button matStepperPrevious>Back</button>
       <button style="background-color: chartreuse; width: 400px; float:right;" mat-button>Save Tenant</button>
