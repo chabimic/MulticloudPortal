@@ -22,7 +22,7 @@ import { AddTenantComponent } from './add-tenant/add-tenant.component';
 import { HomeComponent } from './home/home.component';
 import { AddRegionComponent } from './add-region/add-region.component';
 import {BackendCommunicationService} from './backend-communication.service';
-
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -44,7 +44,8 @@ import {BackendCommunicationService} from './backend-communication.service';
     MatStepperModule,
     MatFormFieldModule,
     MatInputModule,
-    MatSelectModule
+    MatSelectModule,
+    HttpClientModule
   ],
   providers: [BackendCommunicationService],
   bootstrap: [AppComponent]

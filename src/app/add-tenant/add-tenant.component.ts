@@ -13,7 +13,9 @@ export class AddTenantComponent implements OnInit {
   constructor(private backendCommunicationService: BackendCommunicationService) { }
 
   ngOnInit() {
-    this.services = this.backendCommunicationService.getServices();
+    this.backendCommunicationService.getServices().subscribe((res) => {
+      console.log(res);
+      this.services = res; });
   }
 
 }
