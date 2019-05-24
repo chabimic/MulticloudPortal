@@ -21,6 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AddTenantComponent } from './add-tenant/add-tenant.component';
 import { HomeComponent } from './home/home.component';
 import { AddRegionComponent } from './add-region/add-region.component';
+import {BackendCommunicationService} from './backend-communication.service';
 
 
 @NgModule({
@@ -45,7 +46,7 @@ import { AddRegionComponent } from './add-region/add-region.component';
     MatInputModule,
     MatSelectModule
   ],
-  providers: [],
+  providers: [BackendCommunicationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

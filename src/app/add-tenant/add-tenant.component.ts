@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {BackendCommunicationService} from '../backend-communication.service';
 
 @Component({
   selector: 'app-add-tenant',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddTenantComponent implements OnInit {
 
-  constructor() { }
+  public zmienna;
+
+  constructor(private backendCommunicationService: BackendCommunicationService) { }
 
   ngOnInit() {
+    this.zmienna = this.backendCommunicationService.getAllRegions();
   }
 
 }
