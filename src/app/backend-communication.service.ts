@@ -8,11 +8,8 @@ import { environment} from '../environments/environment';
 })
 export class BackendCommunicationService {
   urlToBackend = environment.apiUrl;
-  public services1;
   constructor(private http: HttpClient) { }
- /* getServices1() {
-    return services;
-  }*/
+
   getServices() {
     return this.http.get(this.urlToBackend + '/services');
       /*.subscribe((res: Response) => {
@@ -21,6 +18,9 @@ export class BackendCommunicationService {
       /*.subscribe((data) => {
         console.log('Received', data);
       });*/
+  }
+  getCloudTypes() {
+    return this.http.get(this.urlToBackend + '/cloudTypes');
   }
 }
 

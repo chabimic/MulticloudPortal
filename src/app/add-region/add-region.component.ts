@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import cloudTypes from '../config';
+import {BackendCommunicationService} from '../backend-communication.service';
 
 @Component({
   selector: 'app-add-region',
@@ -8,10 +9,13 @@ import cloudTypes from '../config';
 })
 export class AddRegionComponent implements OnInit {
 
-  cloudTypes = cloudTypes;
-  constructor() { }
+  public cloudTypes;
+  constructor(private backendCommunicationService: BackendCommunicationService) { }
 
   ngOnInit() {
+    this.backendCommunicationService.getCloudTypes().subscribe((response) => {
+      console.log(response);
+      this.cloudTypes = response; });
   }
 
 }

@@ -9,13 +9,12 @@ import {BackendCommunicationService} from '../backend-communication.service';
 export class AddTenantComponent implements OnInit {
 
   public services;
-
   constructor(private backendCommunicationService: BackendCommunicationService) { }
 
   ngOnInit() {
-    this.backendCommunicationService.getServices().subscribe((res) => {
-      console.log(res);
-      this.services = res; });
+    this.backendCommunicationService.getServices().subscribe((response) => {
+      console.log(response);
+      this.services = response; });
   }
 
 }
